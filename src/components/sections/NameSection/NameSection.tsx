@@ -18,12 +18,13 @@ export default function NameSection () {
         alignItems: 'center',
         display: 'flex',
         flexDirection: 'column',
-        gap: 64,
+        gap: mobile ? 32 : 64,
+        borderBottom: `2px solid ${theme.colors.dark[2]}`,
       })}
     >
 
       <Group
-        spacing={mobile ? 16: 64}
+        spacing={mobile ? 32: 64}
         sx={{
           maxWidth: 700,
           alignItems: 'center',
